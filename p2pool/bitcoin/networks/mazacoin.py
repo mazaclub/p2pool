@@ -18,7 +18,7 @@ RPC_CHECK = defer.inlineCallbacks(lambda bitcoind: defer.returnValue(
 SUBSIDY_FUNC = lambda height: 1000*100000000 >> (height + 1)//950000
 POW_FUNC = data.hash256
 BLOCK_PERIOD = 120 # s
-SYMBOL = 'BTC'
+SYMBOL = 'MAZA'
 CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'Mazacoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/Mazacoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.mazacoin'), 'mazacoin.conf')
 BLOCK_EXPLORER_URL_PREFIX = 'https://mazacha.in`/block/'
 ADDRESS_EXPLORER_URL_PREFIX = 'https://mazacha.in/address/'
