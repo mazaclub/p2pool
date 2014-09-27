@@ -20,7 +20,7 @@ POW_FUNC = data.hash256
 BLOCK_PERIOD = 120 # s
 SYMBOL = 'MAZA'
 CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'Mazacoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/Mazacoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.mazacoin'), 'mazacoin.conf')
-BLOCK_EXPLORER_URL_PREFIX = 'https://mazacha.in`/block/'
+BLOCK_EXPLORER_URL_PREFIX = 'https://mazacha.in/block/'
 ADDRESS_EXPLORER_URL_PREFIX = 'https://mazacha.in/address/'
 TX_EXPLORER_URL_PREFIX = 'https://mazacha.in/tx/'
 SANE_TARGET_RANGE = (2**256//2**32//1000000 - 1, 2**256//2**32 - 1)

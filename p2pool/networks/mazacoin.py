@@ -19,6 +19,6 @@ MIN_TARGET = 0
 MAX_TARGET = 2**256//2**40 - 1
 PERSIST = False
 WORKER_PORT = 14477
-BOOTSTRAP_ADDRS = 'p2pool.maza.club p2pool-2.maza.club 74.136.236.120'.split(' ')
+BOOTSTRAP_ADDRS = 'p2pool.maza.club p2pool-2.maza.club'.split(' ')
 ANNOUNCE_CHANNEL = '#mazacoin-p2pool'
 VERSION_CHECK= lambda v: True
